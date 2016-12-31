@@ -101,6 +101,28 @@ git push origin master -f 覆盖掉线上代码，把本地的代码强制推送
 git checkout -b gh-pages
 git add .
 git commit -m"静态页"
-git push origin gh-pages 推送到分支上
+git push origin gh-pages 将分支推送到github
+
+##提交作业
+##讲师
+讲师有个仓库
+
+## 组长
+#组长第一次提交作业
+1）组长需要fork讲师的代码，因为是拷贝的，所以老师的项目更新后，不会影响自己的项目。
+2）将fork下来的代码克隆到本地，（git clone 仓库地址 文件夹名）
+3）将写好的内容进行提交，提交到自己的仓库 git push origin 当前分支名
+4）向老师发送合并请求 点击new pull request 按钮
+
+## 组员
+1）要求组长开通权限，组长让组员操控自己的仓库，进入settings 点击Collaborators贡献者,添加贡献者（账号的名字）
+克隆组长的仓库
+2） 在自己组下，增加自己的文件夹，放入自己的作业
+3）拉取本组（组长的仓库）的最新代码 git pull origin master
+4）拉取老师的仓库的最新代码 git remote add teacher https://github.com/zhufengzhufeng/zhufenghomework_node12.git
+git pull teacher master
+5) 将自己的代码推送到自己的仓库中 git push origin master
+6）给老师发送pull request
+
 </body>
 </html>
