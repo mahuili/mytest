@@ -12,7 +12,7 @@ git config --global user.name
 git config --global user.email
 ##初始化git
 git init
-git -rf .git 删除文件夹
+git -rf .git 删除文件夹（永久删除）
 创建文件夹 mkdir 文件夹名
 ls -al 查看所有的文件
 ##git 三个区 工作区，暂存区 历史/版本库
@@ -21,12 +21,21 @@ rm 1.txt 删除文件
 echo 'hello' > 1.txt 创建文件，并写入（一个大于号清空创建并写入）
 echo 'hello' >> 1.txt 创建文件，并写入(两个大于号向后追加内容)
 cat 1.txt 查看文件内容
-注意：修改文件内容，输入vi 1.xt 命令，然后按键盘i，按esc退出编辑模式，修改之后 输入：wq 保存并退出，（：q! 不保存并退出）
+注意：修改文件内容，输入vi 1.xt 命令，然后按键盘i，按键盘Esc退出编辑模式，修改之后 输入：wq 保存并退出，（：q! 不保存并退出）
 ##把代码放到暂存区
 git status 查看git状态
-提交暂存区
-git add . (git add -A) 添加所有的文件
-git commit -m"dd"
+git add . 或(git add -A 或 git add 文件名) 添加所有的文件 把文件加到暂存区
+##把代码添加到版本库  （特点，内容永远都不会丢失）
+git commit -m"dd" 把文件提交到版本库（历史区）
+##查看提交的版本号
+git log 查看提交的版本号
+git log --oneline 显示记录为一行
+##从暂存区中拉回工作区
+git checkout 文件名 （git checkout -A 拉取所有文件）从暂存区中拉回工作区
+##放入暂存区中，移除新添加的内容
+git reset HEAD 文件名（git reser HEAD . 所有文件）
+git commit -a -m"dd" 提交走到暂存区，然后提交到版本库，但是如果第一次都没有提交过，这个命令是不能把它提交成功的，（不针对于某个文件的首次提交）
+
 
 </body>
 </html>
