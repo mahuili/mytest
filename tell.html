@@ -79,7 +79,17 @@ git merge 分支名字  把分支合并到master上
 ##将本地的历史区提交到github
 1）初始化 git init
 2) 创建忽略文件 touch .gitignore
-
+##将文件放入历史区
+git add .
+git commit -m"首次提交"
+##将本地的内容推送到远程上------如果远程上有内容，则需要先将远程的内容拉取到本地，然后合并后再提交
+##创建关联远程仓库
+git remote add origin(随便起名) 远程地址
+git remote -v 查看远程链接
+##移除远程关联
+git remote rm origin1(远程名字)
+##推送到远程仓库
+git push origin master -u
 
 </body>
 </html>
