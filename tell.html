@@ -90,6 +90,17 @@ git remote -v 查看远程链接
 git remote rm origin1(远程名字)
 ##推送到远程仓库
 git push origin master -u
+##本地和线上版本内容不一定，首先先拉取线上代码，如果拉取后有冲突，解决冲突后再提交，然后再推送
+git pull 拉取
+git push origin master -f 覆盖掉线上代码，把本地的代码强制推送给线上 (建议不要使用)
 
+##在github上挂载静态页
+1）挂载静态页，必须将代码提交到固定的分支上（名字必须叫gh-pages），git checkout -b gh-pages
+2) 将这个分支推送到github上，
+3) 在settings中可以看到提供的网址.
+git checkout -b gh-pages
+git add .
+git commit -m"静态页"
+git push origin gh-pages 推送到分支上
 </body>
 </html>
