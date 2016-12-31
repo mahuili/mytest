@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+##配置一次即可
+如果没有配置过git是不能进行提交操作的
+git config --list 查看所有配置
+git config --global user.name
+git config --global user.email
+##初始化git
+git init
+git -rf .git 删除文件夹
+创建文件夹 mkdir 文件夹名
+ls -al 查看所有的文件
+##git 三个区 工作区，暂存区 历史/版本库
+touch 1.txt 创建文件
+rm 1.txt 删除文件
+echo 'hello' > 1.txt 创建文件，并写入（一个大于号清空创建并写入）
+echo 'hello' >> 1.txt 创建文件，并写入(两个大于号向后追加内容)
+cat 1.txt 查看文件内容
+注意：修改文件内容，输入vi 1.xt 命令，然后按键盘i，按esc退出编辑模式，修改之后 输入：wq 保存并退出，（：q! 不保存并退出）
+##把代码放到暂存区
+git status 查看git状态
+提交暂存区
+git add . (git add -A) 添加所有的文件
+git commit -m"dd"
+
+</body>
+</html>
