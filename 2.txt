@@ -1,0 +1,81 @@
+    1  pwd
+    2  git config --list
+    3  git config --global user.name mahuili
+    4  git confign --global user.email 1315991270@qq.com
+    5  git config --global user.email 1315991270@qq.com
+    6  git config --list
+    7  mkdir mlTest
+    8  cd mlTest
+    9  cd gitTemp
+   10  cd ../
+   11  git init
+   12  git init
+   13  mkdir test
+   14  cd test
+   15  cd /d
+   16  cd /ml
+   17  cd /d/ml
+   18  git -rf .git
+   19  cd test
+   20  git init
+   21  clear
+   22  pwd
+   23  ls
+   24  li -al
+   25  ls -al
+   26  touch 1.txt
+   27  rm 1.txt
+   28  echo 'hello1' > 1.txt
+   29  cat 1.txt
+   30  echo 'hell02' >> 1.txt
+   31  cat 1.txt
+   32  vi 1.txt
+   33  cat 1.txt
+   34  vi 1.txt
+   35  cat 1.txt
+   36  vi 1.txt
+   37  cat 1.tt
+   38  cat 1.txt
+   39  git status
+   40  git add .
+   41  git status
+   42  git commit 
+   43  git log
+   44  git log --oneline
+   45  cat 1.txt
+   46  echo 'hello6666' >> 1.txt
+   47  cat 1.txt
+   48  git commit -a -m"再次提交"
+   49  git log --grep==one
+   50  git log --grep=one
+   51  git log --grep='提交'
+   52  cat 1.txt
+   53  git checkout 1.txt
+   54  cat 1.txt
+   55  echo 'hello' >> 1.txt
+   56  cat 1.txt
+   57  git add .
+   58  cat 1.txt
+   59  git chekout 1.txt
+   60  git checkout 1.txt
+   61  cat 1.txt
+   62  git log
+   63  git reset --hard 1a53a32a07f7a
+   64  cat 1.txt
+   65  git log
+   66  git reset --hard a21345af96467eb9f6c97c
+   67  git log
+   68  git reset --hard 1a53a32a07f7a4d8a
+   69  git log
+   70  clear
+   71  git log
+   72  git reflog
+   73  git reset --hard a21345a 
+   74  git log
+   75  history 1.txt
+   76  histroy 1.txt
+   77  history > 1.txt
+   78  cat 1.txt
+   79  echo 'hello' > 1.txt
+   80  cat 1.txt
+   81  history > 2.txt
